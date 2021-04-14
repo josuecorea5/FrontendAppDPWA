@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="mt-5 container-main">
+    <div class="information">
+        <p>
+            <span style="display: inline-block; background-color: #11ff84; width: 20px; height: 20px; vertical-align: bottom;" class="rounded-circle"> </span>
+            Los mejores en servicios de entrega en El Salvador
+        </p>
+        <p class="mt-5 hola">
+            Tu <em>Forma</em> más fácil <br />
+            para realizar entregas
+        </p>
+        <p class="mt-5 h-auto main-text">
+            Proveemos una gran demanda de servicios de entrega de paquetes a todo El Salvador,
+            de forma segura, rápida y lo más importante que nuestros clientes lleven seguimiento
+            del estado del paquete, nosotros nos encargamos de que llegue a su destino.
+        </p>
+        <div>
+            <div class="input-track">
+                <input type="text" placeholder="Código del producto" />
+                <button>Seguir Entrega</button>
+            </div>
+
+        </div>
+    </div>
+    <figure class="img-main">
+        <img src="~/Img/deliverMask.jpg" />
+    </figure>
+</div>
+<footer class="footer-container">
+        &copy; 2021 - Delivery - <a asp-area="" asp-page="/Privacy">Privacy</a>
+</footer>
+

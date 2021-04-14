@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link  rel="stylesheet" href="~/css/Layout.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">
+            <div class="container">
+                <h1 class="navbar-brand" style="color: #7aa5ef; font-size: 2rem;" asp-area="" asp-page="/Index">Delivery</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                    <ul class="navbar-nav flex-grow-1 d-sm-flex justify-content-center">
+                        <li class="nav-item mr-4 ">
+                            <a class="nav-link text-dark hello" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">About</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Sing In</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Our Clients</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+ 
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
